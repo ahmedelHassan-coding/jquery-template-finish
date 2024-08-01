@@ -1,0 +1,257 @@
+
+
+
+html
+{
+    font-size: 16px !important;
+}
+#loading
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f5ba4b;
+    z-index: 999999;
+}
+#test::after
+{
+    font-family: "Font Awesome 5 Free";
+     font-weight: 900; 
+     content: "\f07a";
+
+}
+#options
+{
+    position: fixed;
+    left: 0;
+    top: 150px;
+    z-index: 9999;
+}
+#options .color-box
+{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+#options .options-box
+{
+    background-color: #ccc;
+    padding: 15px;
+    border: solid #f5ba4b 3px;
+}
+#options i
+{
+    background-color: #f5ba4b;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+
+}
+#options img
+{
+    width: 35px;
+    cursor: pointer;
+
+}
+#btnUp
+{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+}
+#navbar
+{
+    -webkit-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+}
+.img-item
+{
+    width: 20%;
+    float: left;
+    cursor: pointer;
+}
+body
+{
+    font-family: 'segoe ui light' !important ;
+    overflow: hidden;
+}
+.text-sm
+{
+    font-size: 0.9rem;
+}
+
+nav::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    background-color: rgba(255,255,255,.1);
+    opacity: 0.7;
+    width: 90%;
+    height: 1px;
+}
+.text-opacity
+{
+    color: rgba(255,255,255,.65)!important;
+}
+.navbar-nav .nav-link
+{
+    color: #Fff;
+    font-size: 0.85rem;
+    padding: 1rem;
+}
+header
+{
+    height: 100vh;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+}
+
+.overlay
+{
+    background-color: rgba(0,0,0,0.55);
+    height: 100%;
+}
+header h4
+{
+    position: relative;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform-origin: top right;
+        -ms-transform-origin: top right;
+            transform-origin: top right;
+}
+header h4::before
+{
+    content:"";
+    background-color: #fff;
+    right: 102%;
+    top: 50%;
+    height: 2px;
+    width: 2rem;
+    position: absolute;
+}
+
+@media (max-width:800px)
+{
+    header h4
+    {
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+}
+
+
+#features i
+{
+    color: #f5ba4b!important;
+    font-size: 1.2rem;
+}
+#menu .nav-link
+{
+    color: #000;
+    font-weight: 700;
+}
+#menu .nav-pills .nav-link.active, .nav-pills .show>.nav-link
+{
+    background-color: transparent;
+    border-bottom: solid 1px #f5ba4b;
+    border-radius: 0;
+}
+.menu-item
+{
+    position: relative;
+}
+.menu-item:after
+{
+    content: '';
+    width: 80%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.05);
+    top: 100%;
+    left: 10%;
+    position: absolute;
+}
+
+#showing
+{
+    background-color: #343a40!important;
+}
+#services [class*=col-]
+{
+    padding-left:5px ;
+    padding-right: 5px;
+}
+
+
+
+
+  .x
+  {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+     
+  }
+
+
+  .spinner {
+    margin: 250px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  .spinner > div {
+    background-color: #fff;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  }
+  
+  .spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+  
+  .spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  .spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  .spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+  }
+  
+  @-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+    20% { -webkit-transform: scaleY(1.0) }
+  }
+  
+  @keyframes sk-stretchdelay {
+    0%, 40%, 100% { 
+      transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.4);
+    }  20% { 
+      transform: scaleY(1.0);
+      -webkit-transform: scaleY(1.0);
+    }
+  }
